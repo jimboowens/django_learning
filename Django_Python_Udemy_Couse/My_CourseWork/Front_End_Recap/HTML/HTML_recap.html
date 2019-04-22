@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML ReCap</title>
+  </head>
+  <body>
+    <h1>Welcome to my Website.</h1>
+    <p>I'm excited to learn Django!</p>
+    <a href="https://www.djangoproject.com/">This is a link to the official Django Website</a>
+    <p>This is a picture of the Python Logo:</p>
+    <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="">
+    <p>Here are three reasons Django is cool</p>
+      <ol>
+        <li>Ridiculously Fast</li>
+        <li>Reassuringly Secure</li>
+        <li>Exceedingly Scalable</li>
+      </ol>
+    <h2>Bonus: Optional Extra Credit</h2>
+    <p>Can you figure out how to make a picture a link?</p>
+    <a href="https://www.djangoproject.com/"><img src="https://s3.amazonaws.com/clarityfm-production/attachments/6605/default/django.png?1442839704"></a>
+
+    <!--
+    Use the following information to make a
+    table about Country GDP.
+
+    Make a table with HTML consisting of 3 columns:
+    Country Name
+    Country Flag
+    GDP (millions of USD)
+
+    Your table will have 3 rows.
+    Use the information below to attribute the cells correctly:
+
+    United States
+    US Flag: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/190px-Flag_of_the_United_States.svg.png"
+    GDP: 18,561,930
+
+    India
+    Indian Flag: "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/150px-Flag_of_India.svg.png"
+    GDP: 2,250,990
+
+    United Kingdom
+    UK Flag: "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/200px-Flag_of_the_United_Kingdom.svg.png"
+    GDP: 2,649,890
+ -->
+    <table border="1">
+     <thead>
+       <th>Country Name</th>
+       <th>Country Flag</th>
+       <th>GDP($ Millions)</th>
+     </thead>
+     <tbody>
+       <tr>
+         <td>United State</td>
+         <td> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/190px-Flag_of_the_United_States.svg.png" alt=""> </td>
+         <td>18,561,930</td>
+       </tr>
+       <tr>
+         <td>India</td>
+         <td> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/150px-Flag_of_India.svg.png" alt=""> </td>
+         <td>2,250,990</td>
+       </tr>
+       <tr>
+         <td>United Kingdom</td>
+         <td> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/200px-Flag_of_the_United_Kingdom.svg.png" alt=""> </td>
+         <td>2,649,890</td>
+       </tr>
+     </tbody>
+    </table>
+
+    <form class="" action="index.html" method="post">
+      <h1>Choose a color</h1>
+      <h2>Click the button</h2>
+      <input type="color" name="" value="">
+    </form>
+
+    <form>
+      <input type="password" name="password" value="">
+      <input type="submit" name="" value="submit">
+    </form>
+
+    <form class="" action="index.html" method="post">
+      <label for="userInput">Enter Input:</label>
+      <input id="userInput" type="text" name="" placeholder="Hello" required>
+    </form>
+
+    <form method="get">
+      <h1>now for a cool form</h1>
+      <h2>click a radio:</h2>
+      <label for="location">Here</label>
+      <input type="radio" name="location" value="Here">
+      <label for="otherLocation">There</label>
+      <input type="radio" name="location" value="There">
+      <!-- now add new info to the same form -->
+      <h2>now for a dropdown</h2>
+      <select name="rating">
+        <option value="five">5</option>
+        <option value="four">4</option>
+        <option value="three">3</option>
+        <option value="two">2</option>
+        <option value="one">1</option>
+      </select>
+      <h2>now to give me comments:</h2>
+      <textarea name="mytext" rows="8" cols="80"></textarea>
+      <input type="submit" name="" value="submit">
+    </form>
+
+    <h1>Course Sign Up Page</h1>
+    <p>Please Note: First Name, Last Name, Password, and Email are required</p>
+
+      <form method="get">
+        <label for="FirstName">First Name:</label>
+        <input type="text" id="FirstName" placeholder="First Name" required>
+        <label for="LastName">Last Name:</label>
+        <input type="text" id="LastName" placeholder="Last Name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="name@email.com">
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" >
+        <p>Are you over the age of 18?</p>
+        <label for="yes">Yes:</label>
+        <input type="radio" name="Over18" id="yes" value="yesOver">
+        <label for="no">No:</label>
+        <input type="radio" name="Over18" id="no" value="noOver">
+        <p>Do you have a Credit Card or PayPal?</p>
+        <select name="payment">
+          <option value="cc">Credit Card</option>
+          <option value="pp">PayPal</option>
+        </select>
+        <p></p>
+        <input type="submit" name="" value="Submit Feedback">
+      </form>
+
+  </body>
+</html>
